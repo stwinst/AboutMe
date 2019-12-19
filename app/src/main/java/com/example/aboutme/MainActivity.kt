@@ -30,9 +30,10 @@ class MainActivity : AppCompatActivity() {
     private fun addNickname(it: View?) {
 
         val getnickname = findViewById<EditText>(R.id.editText)
-
         val mtextview = findViewById<TextView>(R.id.nickname_text)
+
         mtextview.setText(getnickname.text)
+        
         mtextview.setVisibility(TextView.VISIBLE)
         getnickname.setVisibility(EditText.GONE)
     }
